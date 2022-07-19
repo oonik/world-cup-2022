@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald&family=Poppins:wght@500;700&family=Roboto:wght@100&display=swap');
+
+body{
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+/* header  */
+.container{
+    display: flex;
+    background-color: black;
+    color: whitesmoke;
+    width: 1321px;
+    height: 646px;
+    align-items: center;
+    
+}
+.player-detail{
+    width: 531px;
+    height: 424px;
+    margin-left: 5%;
+}
+.font-size{
+    font-size: 55px;
+}
+.anchor{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #DD0000;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.image{
+    width: 581px;
+    height: 613px;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+/* ------------
+   make card 
+   ------------- */
+   .container-flexible{
+    display: flex;
+    margin-top: 130px;
+    margin-left: 50px;
+   }
+   .container-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+   }
+   .card{
+    width: 317px;
+    height: 324.21px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+   }
+   .icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+   }
+   .transfer{
+    margin-top: 0%;
+    height: 20px;
+    width: 80px;
+   }
+   /* side box  */
+   .box{
+    background-color: #161616;
+    width: 212px;
+    height: 212px;
+    display: flex;
+    margin-right: 10px;
+    flex-direction: column;
+    align-items: center;
+    
+   }
+   button{
+    width: 152px;
+    height: 40px;
+    margin-top: 15%;
+    border-radius: 7px;
+   }
+   #color{
+    background-color: #DD0000;
+   }
+   /* div a{
+    text-decoration: none;
+    width: 252px;
+    height: 64px; 
+    background-color: aliceblue;
+   } */
+  
