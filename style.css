@@ -4,7 +4,9 @@ body{
     margin: 0%;
     font-family: 'Poppins', sans-serif;
 }
-/* header  */
+/* ----------------
+     header
+------------------  */
 .container{
     display: flex;
     background-color: black;
@@ -35,14 +37,37 @@ body{
     margin-top: 20%;
     margin-left: 20%;
 }
-/* ------------
-   make card 
-   ------------- */
+
+   /* ----------------
+        side box 
+    ------------------ */
    .container-flexible{
     display: flex;
     margin-top: 130px;
     margin-left: 50px;
    }
+   .box{
+    background-color: #161616;
+    width: 212px;
+    height: 212px;
+    display: flex;
+    margin-right: 10px;
+    flex-direction: column;
+    align-items: center;
+    
+   }
+   button{
+    width: 152px;
+    height: 40px;
+    margin-top: 15%;
+    border-radius: 7px;
+   }
+   #color{
+    background-color: #DD0000;
+   }
+   /* ------------
+   make card 
+   ------------- */
    .container-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -64,30 +89,135 @@ body{
     height: 20px;
     width: 80px;
    }
-   /* side box  */
-   .box{
+   /* ---------------
+         footer
+    ---------------  */
+   footer{
+    margin-top: 10%;
     background-color: #161616;
-    width: 212px;
-    height: 212px;
+    color: aliceblue;
+    padding: 50px 150px;
+   }
+   .contente-center{
     display: flex;
-    margin-right: 10px;
     flex-direction: column;
     align-items: center;
-    
    }
-   button{
-    width: 152px;
-    height: 40px;
-    margin-top: 15%;
-    border-radius: 7px;
-   }
-   #color{
-    background-color: #DD0000;
-   }
-   /* div a{
+   .menu, a{
     text-decoration: none;
-    width: 252px;
-    height: 64px; 
-    background-color: aliceblue;
-   } */
+    color: aliceblue;
+    margin-left: 10px;
+   }
+
+   /*-----------------
+    match html style 
+    ------------------ */
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 24px;
+        column-gap: 24px;
+    }
+    .make-card{
+        box-shadow: 2px 2px 2px cornsilk;
+        width: 312px;
+        height: 242px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-1{
+        display: flex;
+        flex-direction: row;
+    }
+    /* -----------------
+       mobile responsive
+    -------------------- */
+    @media only screen and (max-width:688px) {
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+        .player-detail{
+            width: 100%;
+        }
+        .image{
+            width: 100%;
+            margin-top: 50%;
+            height: 80%;
+            
+            
+        }
+        .container-flexible{
+            display: flex;
+            flex-direction: column;
+            margin-top: 200px;
+            margin-left: 10%;
+            
+        }
+        .container-grid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .box{
+            margin-left: 16%;
+        }
+        
+        .menu{
+            display: flex;
+            flex-direction: column;
+        }
+        .icon-div{
+            display: flex;
+            flex-direction: row;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    /* -------------------
+    tablate device  
+    ----------------------*/
+
+    @media only screen and (min-width:689px) and (max-width:991px) {
+        
+        .container{
+            width: 100%;
+            height: 100%;
+        }
+        .container-flexible{
+            display: flex;
+            flex-direction: column;
+        }
+        .box{
+            display: flex;
+            flex-direction: row;
+            height: 0%;
+            width: 0%;
+            margin-left: 15%;
+            margin-bottom: 5%;
+        }
+        
+        .container-grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            
+        }
+        .menu{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
   
