@@ -6,15 +6,21 @@ body{
 }
 /* ----------------
      header
-------------------  */
+/* ------------------  */
+/* .container-header{
+    display: table;
+    
+}  */
 .container{
     display: flex;
     background-color: black;
     color: whitesmoke;
-    width: 1321px;
+    width: 1181px;
     height: 646px;
     align-items: center;
-    
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
 }
 .player-detail{
     width: 531px;
@@ -35,7 +41,7 @@ body{
     width: 581px;
     height: 613px;
     margin-top: 20%;
-    margin-left: 20%;
+    margin-left: 0%;
 }
 
    /* ----------------
@@ -45,6 +51,7 @@ body{
     display: flex;
     margin-top: 130px;
     margin-left: 50px;
+    
    }
    .box{
     background-color: #161616;
@@ -154,8 +161,9 @@ body{
         .container{
             display: flex;
             flex-direction: column;
-            width: 100%;
+            width: 90%;
             height: 100%;
+            
         }
         .player-detail{
             width: 100%;
@@ -204,10 +212,17 @@ body{
     ----------------------*/
 
     @media only screen and (min-width:689px) and (max-width:991px) {
-        
+        /* body{
+            display: flex;
+            flex-direction: column;
+           margin: auto;
+        } */
         .container{
-            width: 100%;
+            display: flex;
+            width: 90%;
             height: 100%;
+            /* margin: auto; */
+            align-items: flex-start;
         }
         .container-flexible{
             display: flex;
@@ -218,7 +233,7 @@ body{
             flex-direction: row;
             height: 0%;
             width: 0%;
-            margin-left: 15%;
+            /* margin-left: 15%; */
             margin-bottom: 5%;
         }
         
