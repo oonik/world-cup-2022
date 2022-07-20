@@ -89,6 +89,20 @@ body{
     height: 20px;
     width: 80px;
    }
+   .red-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+   }
+   #view-button{
+    border: #DD0000;
+    background-color: #DD0000;
+    padding: 25px;
+    align-items: center;
+    color: aliceblue;
+    
+   }
    /* ---------------
          footer
     ---------------  */
@@ -180,6 +194,9 @@ body{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
         }
+        #view-button{
+            display: none;
+        }
     }
 
     /* -------------------
@@ -217,6 +234,15 @@ body{
         .menu{
             display: flex;
             flex-direction: row;
+        }
+    }
+
+    /*---------------------
+        learge device
+     -----------------------  */
+    @media only screen and (min-width:992px) and (max-width:1312px) {
+        #view-button{
+            display: none;
         }
     }
 
